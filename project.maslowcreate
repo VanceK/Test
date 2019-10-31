@@ -2,12 +2,12 @@
     "molecules": [
         {
             "atomType": "Molecule",
-            "name": "Test",
-            "x": 0,
-            "y": 0,
-            "uniqueID": 463314,
+            "name": "Molecule",
+            "x": 395,
+            "y": 155,
+            "uniqueID": 671005,
             "ioValues": [],
-            "topLevel": true,
+            "topLevel": false,
             "allAtoms": [
                 {
                     "atomType": "Output",
@@ -18,6 +18,71 @@
                 }
             ],
             "allConnectors": [],
+            "fileTypeVersion": 1
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Test",
+            "x": 0,
+            "y": 0,
+            "uniqueID": 463314,
+            "ioValues": [],
+            "topLevel": true,
+            "allAtoms": [
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 395,
+                    "y": 155,
+                    "uniqueID": 671005,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 482,
+                    "y": 237,
+                    "uniqueID": 998282,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 616,
+                    "y": 264,
+                    "uniqueID": 252623,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 1870,
+                    "y": 229,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "height",
+                    "ap1ID": 998282,
+                    "ap2ID": 252623
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
